@@ -1,8 +1,8 @@
 {
-  "name": "rbxts-inspector-syn2",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "rbxts-inspector-syn",
+  "version": "0.1.0",
+  "description": "A custom inspector designed for more features when inspecting Instances or Flamework Components. You will see all Instance attributes ",
+  "main": "out/init.server.luau",
   "scripts": {
     "build": "rbxtsc",
     "watch": "rbxtsc -w"
@@ -16,10 +16,11 @@
     "@rbxts/types": "^1.0.880",
     "rbxts-transformer-flamework": "^1.3.2",
     "roblox-ts": "^3.0.0",
-    "typescript": "^5.9.2"
+    "typescript": "=5.5.3"
   },
   "dependencies": {
     "@flamework/components": "^1.3.2",
-    "@flamework/core": "^1.3.2"
+    "@flamework/core": "^1.3.2",
+    "reflect-metadata": "^0.2.2"
   }
 }
