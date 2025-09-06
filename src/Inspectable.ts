@@ -6,10 +6,10 @@ export interface InspectableOptions {
 export function Inspectable(options: InspectableOptions) {
 	return (target: object, propertyKey: string | symbol) => {
 		const keys: Set<string | symbol> =
-		Reflect.getMetadata("inspector:keys",target) || new Set();
+		Reflect.getMetadata("syn_inspector:keys",target) || new Set();
 
 		keys.add(propertyKey);
-		Reflect.defineMetadata("inspector:keys", keys, target);
-		Reflect.defineMetadata("inspector:options", options, target, propertyKey);
+		Reflect.defineMetadata("syn_inspector:keys", keys, target);
+		Reflect.defineMetadata("syn_inspector:options", options, target, propertyKey);
 	}
 }
