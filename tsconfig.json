@@ -26,7 +26,13 @@
 		"tsBuildInfoFile": "out/tsconfig.tsbuildinfo",
 		"emitDecoratorMetadata": true,
 		"plugins": [
-			{ "transform": "rbxts-transformer-flamework" }
+			{ "transform": "rbxts-transformer-flamework" },
+			{
+				"transform": "rbxts-transform-debug",
+				"enabled": true,
+				"verbose": false,
+				"version": 2
+			}
 		]
 	}
 }
